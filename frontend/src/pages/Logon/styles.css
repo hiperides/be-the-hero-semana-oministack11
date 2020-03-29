@@ -1,0 +1,35 @@
+.logon-container {
+    /* Largura */
+    width: 100%;
+    /* Largura Máxima */
+    max-width: 1120px;
+    /* Altura toda do corpo */
+    height: 100vh;
+
+    /* Para que o conteúdo fique sempre centralizado na tela */
+    margin: 0 auto;
+
+    /* Facilita os alinhamentos, mas faz ficar um item ao lado do outro*/
+    display: flex;
+    /* Alinhar os itens verticalmente */
+    align-items: center;
+    /* Alinhar os itens horizontalmente */
+    justify-content: space-between;
+
+}
+
+.logon-container section.form {
+    width: 100%;
+    /* Visa a responsividade depois */
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.logon-container section.form form {
+    margin-top: 100px
+}
+
+.logon-container section.form form h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}

@@ -4,6 +4,9 @@ const express = require('express');
 //Importando routes do arquivo routes.js, sempre nesse modo pra identificar que é um arquivo ./routes
 const routes = require('./routes');
 
+//Importando Cors
+const cors = require('cors');
+
 //Variável que armazena a minha aplicação
 const app = express();
 
