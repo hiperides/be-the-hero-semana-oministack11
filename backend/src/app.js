@@ -4,6 +4,8 @@ const express = require('express');
 //Importando routes do arquivo routes.js, sempre nesse modo pra identificar que é um arquivo ./routes
 const routes = require('./routes');
 
+const { errors } = require('celebrate');
+
 //Importando Cors
 const cors = require('cors');
 
@@ -20,6 +22,8 @@ app.use(express.json())
 app.use(routes);
 
 // app.get acessando uma rota
+
+app.use(errors());
 
 /**
  * Rota / Recurso associado a uma tabela no banco, algo que queremos buscar no banco
@@ -62,5 +66,4 @@ app.use(routes);
 //     });
 // });
 
-//Ouvir a porta pelo navegador localhost:3333
-app.listen(3333);
+module.exports = app;
